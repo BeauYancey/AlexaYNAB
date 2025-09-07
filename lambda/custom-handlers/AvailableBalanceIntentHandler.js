@@ -1,3 +1,4 @@
+const Alexa = require('ask-sdk-core');
 const fetch = require('node-fetch');
 
 /**
