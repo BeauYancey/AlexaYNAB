@@ -1,0 +1,14 @@
+{
+  "name": "alexa-budget-skill",
+  "version": "1.2.0",
+  "description": "Hands-free access to your budget for YNAB users",
+  "main": "index.js",
+  "author": "Beau Yancey",
+  "license": "Apache License",
+  "dependencies": {
+    "ask-sdk-core": "^2.7.0",
+    "ask-sdk-model": "^1.19.0",
+    "aws-sdk": "^2.326.0",
+    "node-fetch": "^2.6.12"
+  }
+}
