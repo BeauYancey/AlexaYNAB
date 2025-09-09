@@ -1,6 +1,8 @@
 const Alexa = require('ask-sdk-core');
 const IntentReflectorHandler = require('./custom-handlers/IntentReflectorHandler');
 const AvailableBalanceIntentHandler = require('./custom-handlers/AvailableBalanceIntentHandler');
+const SpentThisMonthIntentHandler = require('./custom-handlers/SpentThisMonthIntentHandler');
+const SpentLastMonthIntentHandler = require('./custom-handlers/SpentLastMonthIntentHandler');
 
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
@@ -99,6 +101,8 @@ exports.handler = Alexa.SkillBuilders.custom()
         FallbackIntentHandler,
         SessionEndedRequestHandler,
         AvailableBalanceIntentHandler,
+        SpentThisMonthIntentHandler,
+        SpentLastMonthIntentHandler,
         IntentReflectorHandler)
     .addErrorHandlers(ErrorHandler)
     .lambda();
